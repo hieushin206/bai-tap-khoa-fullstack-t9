@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập CSS Tiết 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header">
+        <h1 class="page-title">
+          <i class="fa-brands fa-node-js"></i> Hệ thống Đào tạo Lập trình 28Tech
+        </h1>
+        <p><i>Thực hành Định dạng Văn bản, Nền và Bộ chọn CSS</i></p>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main  -->
+    <main>
+      <div class="intro-section">
+        <h2 class="section-heading">
+          1. Khóa học Node.js Backend dành cho ai?
+        </h2>
+        <p>
+          Khóa học được thiết kế đặc biệt dành cho các lập trình viên muốn
+          chuyển từ Frontend sang Backend, hoặc những người đang làm việc giờ
+          hành chính (ví dụ: nhân viên làm việc tại các <b>ngân hàng</b>, tổ
+          chức tài chính) cần một lộ trình tối ưu thời gian học vào buổi tối.
+        </p>
+        <h3>Góc làm việc tiêu chuẩn</h3>
+        <div>
+          <p>
+            <i
+              >Để tăng hiệu suất viết code, bạn nên sử dụng các dòng màn hình đồ
+              họa/code chuyên dụng như Tomko T3232Q. Nếu cần review cấu trúc
+              Database phức tạp cùng team, việc kết nối PC để hiển thị lên Tivi
+              Samsung QLED 65-inch (Tizen OS) sẽ mang lại trải nghiệm không gian
+              cực kỳ rộng rãi và bảo vệ mắt.</i
+            >
+          </p>
+        </div>
+      </div>
+      <div class="tuition-section">
+        <h2 class="section-heading">2. Thông tin Học phí & Tài chính</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hạng mục</th>
+              <th>Mức giá quy đổi (VNĐ)</th>
+              <th>Ghi chú tỷ giá</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="color-hangMuc">Học phí Node.js Backend</td>
+              <td class="text-center">4.500.000đ</td>
+              <td>Có thể thanh toán bằng thẻ tín dụng quốc tế.</td>
+            </tr>
+            <tr>
+              <td class="color-hangMuc">Phí mua Server / Tên miền (1 năm)</td>
+              <td class="text-center">~ 1.200.000đ</td>
+              <td>
+                Phụ thuộc vào <b>tỷ giá USD/VNĐ</b> tại thời điểm thanh toán.
+                Học viên cần theo dõi kỹ tỷ giá USD trên thị trường.
+              </td>
+            </tr>
+            <tr>
+              <td class="color-hangMuc">Chứng chỉ quốc tế (Tự chọn)</td>
+              <td class="text-center">Không cố định</td>
+              <td>
+                Dành cho các học viên đầu tư dài hạn. Nhiều học viên lựa chọn
+                quy đổi và tích trữ <b>vàng</b> ở Việt Nam để làm quỹ dự phòng
+                thay vì để tiền mặt mất giá.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="event-registration">
+        <h2 class="section-heading">
+          3. Đăng ký Dã ngoại Road Trip (Tháng 4/2026)
+        </h2>
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+          <h3 class="form-title">A. Thông tin Trưởng đoàn</h3>
+          <h4 class="text-decor">
+            <i
+              >Vui lòng điền đầy đủ và chính xác để Ban tổ chức sắp xếp phòng
+              nghỉ.</i
+            >
+          </h4>
+          <label class="form-label" for="fullname">Họ và tên:</label><br />
+          <input
+            id="fullname"
+            type="text"
+            name="fullName"
+            class="form-input"
+          /><br /><br />
+          <label class="form-label" for="email">Email liên hệ:</label><br />
+          <input type="email" id="email" name="email" class="form-input" />
+          <!--  -->
+          <h3 class="form-title">B. Lịch trình & Phương tiện</h3>
+          <label class="form-label" for="route">Chọn chặng hành trình:</label
+          ><br />
+          <select name="route" id="route" class="form-select">
+            <option value="hanam">
+              Chặng 1: Hà Nội - Vui chơi tại Sun World Hà Nam
+            </option>
+            <option value="danang" selected>
+              Chặng Full (9 Ngày): Hà Nội - Đà Nẵng (Ưu tiên đi đường ven biển
+              ngắm cảnh, hạn chế cao tốc)
+            </option>
+          </select>
+          <!--  -->
+          <p class="form-label">Bạn sẽ di chuyển bằng phương tiện gì?</p>
+          <input type="radio" name="transport" id="bus" value="bus" />
+          <label class="form-label" for="bus"> Xe khách 45 chỗ của 28Tech</label
+          ><br />
+          <input type="radio" name="transport" id="car" value="car" />
+          <label class="form-label" for="car"
+            >Tự lái xe cá nhân (Dòng xe gầm cao Crossover - Ví dụ: Omoda
+            C5)</label
+          ><br /><br />
+          <!--  -->
+          <h3 class="form-title">C. Hỗ trợ đặc biệt</h3>
+          <p class="form-label">
+            Tích chọn các dịch vụ bạn cần Ban tổ chức chuẩn bị trước:
+          </p>
+          <input type="checkbox" name="support" id="family" value="family" />
+          <label class="form-label" for="family">
+            Tôi đi cùng vợ/chồng, cần bố trí phòng ngủ đôi.</label
+          ><br />
+          <input type="checkbox" name="support" id="baby" value="baby" />
+          <label class="form-label" for="baby"
+            >Tôi có trẻ em 2 tuổi đi cùng. Cần hỗ trợ kiểm tra chốt ghế trẻ em
+            (ISOFIX) trên xe.</label
+          ><br />
+          <input type="checkbox" name="support" id="food" value="food" />
+          <label class="form-label" for="food"
+            >Cần hỗ trợ tìm danh sách các nhà hàng ăn trưa quanh bán kính 10km
+            khu vực Phủ Lý (Hà Nam).</label
+          ><br /><br />
+          <!--  -->
+          <label for="music" class="form-label"
+            >Gợi ý nhạc phát trên xe / Sự kiện:</label
+          ><br />
+          <textarea id="music" name="" class="form-textarea">
+Đề xuất các bài nhạc Rap hoặc Future Bass sôi động có chèn logo/lyric về 28Tech...</textarea
+          ><br /><br />
+          <button class="btn">
+            <i class="fa-solid fa-check"></i> Xác nhận gửi form đăng ký
+          </button>
+        </form>
+      </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <p class="footer-text">
+          Copyright 2026 - 28Tech. Lớp học Node.js Middle.
+        </p>
+        <p class="footer-subtext">
+          <i>Đã bật chế độ mờ 50% (Opacity) cho dòng chữ này.</i>
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>

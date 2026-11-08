@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Tổng hợp HTML5</title>
+  </head>
+  <body>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+    <header>
+      <a href="bai10/images/logo.png" target="_blank"
+        ><img src="assets/images/logo.png" alt="logo" width="300px"
+      /></a>
+      <h1>Lộ Trình Trở Thành Lập Trình Viên Node.js Backend</h1>
+      <p>
+        Bài tập thực hành kết hợp kiến thức Tiết 1 & Tiết 2 (Video, Audio,
+        Table, List, Iframe, Semantic)
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#lo_trinh">1. Bảng Lộ trình & Tài chính</a></li>
+          <li><a href="#su_kien">2. Sự kiện & Lịch trình</a></li>
+          <li><a href="#tai_nguyen">3. Nhúng Tài nguyên ngoài</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <h2 id="lo_trinh">
+        1. Bảng Phân Tích Dữ Liệu (Sử dụng Table, Rowspan, Colspan)
+      </h2>
+      <h3>1.1. Lộ trình khóa học chi tiết</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Giai đoạn</th>
+            <th>Thời gian</th>
+            <th>Kiến thức trọng tâm</th>
+            <th>Dự án thực tế</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Giai đoạn 1</td>
+            <td>Tháng 1</td>
+            <td>HTML5, CSS3, JavaScript cơ bản</td>
+            <td rowspan="2">Xây dựng giao diện Web tĩnh</td>
+          </tr>
+          <tr>
+            <td>Tháng 2</td>
+            <td>DOM, Events, Async/Await</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Giai đoạn 2</td>
+            <td>Tháng 3</td>
+            <td>Cấu trúc hệ thống Node.js, Nest framework</td>
+            <td>API Quản lý sản phẩm</td>
+          </tr>
+          <tr>
+            <td>Tháng 4</td>
+            <td>Cơ sở dữ liệu MongoDB & MySQL</td>
+            <td rowspan="2">Hệ thống Đăng nhập & Phân quyền (Auth)</td>
+          </tr>
+          <tr>
+            <td>Tháng 5</td>
+            <td>Triển khai Server (Deployment)</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">
+              <mark>Bảo vệ Đồ án Tốt nghiệp vào cuối Tháng 6</mark>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <h3>1.2. Phân tích tài chính đầu tư cho học tập & Thiết bị</h3>
+      <p>
+        Một Backend Developer cần trang bị thiết bị tốt để làm việc. Dưới đây là
+        bảng theo dõi biến động chi phí tham khảo tại thị trường Việt Nam (áp
+        dụng kiến thức gộp ô phức tạp):
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">Hạng mục Đầu tư</th>
+            <th colspan="2">Tháng 2/2026</th>
+            <th colspan="2">Dự kiến Tháng 4/2026</th>
+          </tr>
+          <tr>
+            <th>Tỷ giá USD</th>
+            <th>Giá Vàng (VNĐ/Lượng)</th>
+            <th>Tỷ giá USD</th>
+            <th>Giá Vàng (VNĐ/Lượng)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Đóng học phí chứng chỉ quốc tế (Quy đổi USD)</td>
+            <td>24.500đ</td>
+            <td rowspan="2">78.000.000đ</td>
+            <td rowspan="3">Cập nhật sau</td>
+            <td rowspan="3">Cập nhật sau</td>
+          </tr>
+          <tr>
+            <td>Nâng cấp màn hình máy tính (Tomko T3232Q)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Quỹ dự phòng sinh hoạt (Quy ra Vàng)</td>
+            <td colspan="2">Tích lũy dài hạn - Không bán ra</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 id="su_kien">
+        2. Sự kiện ngoại khóa (Danh sách List lồng nhau đa cấp)
+      </h2>
+      <p>
+        Để tăng tinh thần gắn kết, 28Tech tổ chức sự kiện Road Trip cho các học
+        viên xuất sắc nhất. Dưới đây là lịch trình chi tiết:
+      </p>
+      <ol type="I">
+        <li>
+          <b>Giai đoạn chuẩn bị (Trước chuyến đi)</b>
+          <ul>
+            <li>
+              Kiểm tra và bảo dưỡng phương tiện:
+              <ol type="a">
+                <li>Bảo dưỡng tổng thể xe Omoda C5 (5 chỗ).</li>
+                <li>
+                  Kiểm tra chốt an toàn ISOFIX (Do đoàn có trẻ em 2 tuổi đi
+                  cùng).
+                </li>
+                <li>Chuẩn bị lốp dự phòng và bơm điện.</li>
+              </ol>
+            </li>
+            <li>Lên danh sách thiết bị y tế và đồ ăn nhẹ.</li>
+          </ul>
+        </li>
+        <li>
+          <b>Lịch trình 9 ngày: Hà Nội - Đà Nẵng (Tháng 4/2026)</b>
+          <ol>
+            <li>
+              <b>Ngày 1 - Ngày 3: Bắt đầu hành trình</b>
+              <ul>
+                <li>
+                  Xuất phát từ Hà Nội, chạy theo đường ven biển ngắm cảnh (Hạn
+                  chế tối đa cao tốc).
+                </li>
+                <li>Ghé thăm Sun World Hà Nam (Phủ Lý).</li>
+                <li>
+                  Ăn trưa tại các nhà hàng trong bán kính 10km quanh khu vực Sun
+                  World.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Ngày 4 - Ngày 6: Khám phá Miền Trung</b>
+              <ul>
+                <li>Dừng chân tại Quảng Bình, Huế.</li>
+                <li>Tổ chức team building tại bãi biển.</li>
+              </ul>
+            </li>
+            <li>
+              <b>Ngày 7 - Ngày 9: Tiến về Đà Nẵng</b>
+              <ul>
+                <li>Giao lưu cùng cộng đồng IT Đà Nẵng.</li>
+                <li>Gala Dinner tổng kết và trao giải.</li>
+                <li>
+                  Kết thúc hành trình, gửi xe lên tàu hỏa và bay về Hà Nội.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <hr />
+      <h2 id="tai_nguyen">3. Tài liệu nhúng (Iframe)</h2>
+      <h3>Nhúng trang chủ 28Tech</h3>
+      <iframe
+        src="https://28tech.com.vn/"
+        frameborder="0"
+        width="100%"
+        height="600px"
+      ></iframe>
+      <h3>
+        Nhúng Bản đồ (Google Maps - Ví dụ tọa độ: Học viện Công nghệ Bưu chính
+        viễn thông)
+      </h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477008.8358174469!2d105.62481891987628!3d20.92713908147055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1790261324778!5m2!1svi!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </main>
+    <hr />
+    <aside>
+      <h3>Góc chia sẻ & Quảng cáo</h3>
+      <p>
+        <a
+          href="https://28tech.com.vn/lap-trinh-fullstack"
+          title="Khóa học Lập trình Fullstack Web - Junior Ready"
+          target="_blank"
+          >Khóa học Lập trình Fullstack Web - Junior Ready</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://28tech.com.vn/lap-trinh-backend-nodejs-middle"
+          target="_blank"
+          title="Khóa học Lập trình Backend NodeJS Middle"
+          >Khóa học Lập trình Backend NodeJS Middle</a
+        >
+      </p>
+    </aside>
+    <hr />
+    <footer>
+      <p><b>Trung tâm Đào tạo Lập trình 28Tech</b></p>
+      <p>Địa chỉ: Cầu Giấy, Hà Nội, Việt Nam</p>
+      <p>Công thức Hóa học của sự thành công: Đam mê + H2O + Code = 28Tech</p>
+      <p>
+        <del>Bản quyền năm 2025</del> <mark>Bản quyền cập nhật năm 2026</mark>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="inner-header">
+        <h1>Hệ thống Đào tạo 28Tech - Portal Học viên</h1>
+        <nav class="inner-menu">
+          <ul>
+            <li><a href="#setup">Trang chủ</a></li>
+            <li><a href="#road-trip">Góc làm việc</a></li>
+            <li><a href="#form-section">Sự kiện Road Trip</a></li>
+            <li>
+              <a href="https://28tech.com.vn/" target="_blank"
+                >Tài liệu ngoài</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank"
+                >Video Bài Giảng</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section id="setup">
+        <h2>1. Tiêu chuẩn Setup Góc Code Backend</h2>
+        <p>
+          Đối với các học viên chuyển ngành hoặc đang làm việc giờ hành chính
+          tại các <b>ngân hàng</b>, việc tối ưu không gian làm việc tại nhà là
+          cực kỳ quan trọng.
+        </p>
+        <div class="device-list">
+          <div class="device">
+            <h3 class="device-title">Màn hình Tomko T3232Q</h3>
+            <p class="device-desc">
+              Màn hình tỷ lệ chuẩn, giúp bạn dễ dàng chia đôi cửa sổ: Một bên
+              viết code Node.js, một bên tra cứu tài liệu API mà không bị rối
+              mắt.
+            </p>
+          </div>
+          <div class="device">
+            <h3 class="device-title">Tivi Samsung QLED 65-inch</h3>
+            <p class="device-desc">
+              Sử dụng hệ điều hành Tizen OS. Rất phù hợp để cast màn hình từ
+              Laptop lên Tivi khi cần review sơ đồ cơ sở dữ liệu cùng team, bảo
+              vệ mắt tuyệt đối.
+            </p>
+          </div>
+          <div class="device">
+            <h3 class="device-title">Máy chiếu cũ</h3>
+            <p class="device-desc">
+              Thiết bị này đã lỗi thời và mờ, không còn được khuyến nghị sử
+              dụng. (Phần tử này sẽ bị ẩn bằng CSS).
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="road-trip">
+        <h2>2. Hành trang Road Trip: Hà Nội - Đà Nẵng</h2>
+        <div class="overflow">
+          <p>
+            Chào mừng các bạn đến với sự kiện dã ngoại tháng 4. Đây là cơ hội để
+            anh em Dev giao lưu thực tế. Lịch trình đi qua các cung đường ven
+            biển tuyệt đẹp. Đừng quên mang theo laptop để có thể xử lý lỗi
+            server bất cứ lúc nào! (Đoạn text này cố tình viết dài để test tính
+            năng thanh cuộn overflow của Box Model khi chiều cao bị giới hạn).
+            Anh em nhớ theo dõi sát tỷ giá USD và Vàng để dự trù kinh phí tốt
+            nhất nhé!
+          </p>
+        </div>
+        <h3>Danh sách cần chuẩn bị:</h3>
+        <ul class="list">
+          <li>Hoàn tất thủ tục xin nghỉ phép tại ngân hàng / công ty.</li>
+          <li>
+            Bảo dưỡng xe cá nhân (Omoda C5) trước chuyến đi (Kiểm tra lốp dự
+            phòng, bơm điện).
+          </li>
+          <li>
+            Kiểm tra và lắp đặt chắc chắn chốt an toàn
+            <strong>ISOFIX</strong> cho bé 2 tuổi.
+          </li>
+          <li class="impostain-box">
+            Cập nhật biểu đồ giá Vàng và tỷ giá USD ngày khởi hành.
+          </li>
+          <li>
+            Sắp xếp Playlist nhạc (Future Bass, Rap 28Tech) nghe dọc đường.
+          </li>
+        </ul>
+      </section>
+      <section id="form-section">
+        <h2>3. Xác nhận thông tin thành viên</h2>
+        <form
+          action="https://www.w3schools.com/action_page.php"
+          method="post"
+          class="form-user"
+        >
+          <div class="inner-input">
+            <input
+              type="text"
+              name="hoTen"
+              placeholder="Họ và tên của bạn..."
+            />
+          </div>
+          <div class="inner-input">
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Email nhận thông báo..."
+            />
+          </div>
+          <div class="inner-input">
+            <input
+              type="password"
+              name="password"
+              id=""
+              placeholder="Mật khẩu Portal..."
+            />
+          </div>
+          <button class="submit">Xác nhận</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

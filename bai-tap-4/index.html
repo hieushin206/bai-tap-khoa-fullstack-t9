@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập HTML5: Biểu mẫu (Form) - 28Tech</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hệ thống Đào tạo 28Tech - Thực hành HTML5</h1>
+      <p><b>Chủ đề:</b> Xây dựng các Biểu mẫu (Form) thu thập dữ liệu.</p>
+    </header>
+    <main>
+      <h2>Bài tập 1: Form Đăng ký Tài khoản Học viên</h2>
+      <p>
+        <i
+          >Yêu cầu: Sử dụng method POST để bảo mật thông tin, bật tính năng gợi
+          ý điền (autocomplete).</i
+        >
+      </p>
+
+      <form
+        action="https://www.w3schools.com/action_page.php"
+        method="post"
+        autocomplete="on"
+      >
+        <p><b>1. Thông tin cá nhân:</b></p>
+        <label for="full-name">Họ và tên:</label>
+        <input
+          id="full-name"
+          type="text"
+          placeholder="Nhập họ tên đầy đủ..."
+          name="hoTen"
+        />
+
+        <br />
+        <br />
+
+        <label for="Email">Email liên hệ:</label>
+        <input
+          id="Email"
+          type="email"
+          placeholder="dev@example.com"
+          name="Email"
+        />
+
+        <br />
+        <br />
+
+        <label for="Pass">Mật khẩu hệ thống:</label>
+        <input
+          id="Pass"
+          type="password"
+          placeholder="••••••••"
+          name="matKhau"
+        />
+
+        <p><b>2. Giới tính:</b></p>
+        <input id="male" type="radio" name="gioiTinh" value="Nam" />
+        <label for="male">Nam</label>
+
+        <input id="female" type="radio" name="gioiTinh" value="Nữ" />
+        <label for="female">Nữ</label>
+
+        <input id="different" type="radio" name="gioiTinh" value="Khác" />
+        <label for="different">Khác</label>
+
+        <p><b>3. Nền tảng lập trình đã biết:</b></p>
+        <input id="C" type="checkbox" name="ngonNgu" value="C" />
+        <label for="C">Ngôn ngữ C/C++</label>
+
+        <input id="Java" type="checkbox" name="ngonNgu" value="Java" />
+        <label for="Java">Ngôn ngữ Java</label>
+
+        <input id="PHP" type="checkbox" name="ngonNgu" value="PHP" />
+        <label for="PHP">Ngôn ngữ PHP</label>
+
+        <p><b>4. Định hướng nghề nghiệp:</b></p>
+        <label for="muctieu"
+          >Chia sẻ mục tiêu của bạn sau khi hoàn thành khóa học:</label
+        >
+        <br />
+        <textarea name="mucTieu" id="muctieu" rows="4" cols="60"></textarea>
+        <br /><br />
+        <button>Tạo tài khoản học viên</button>
+      </form>
+      <hr />
+
+      <h2>Bài tập 2: Form Đăng ký Dã ngoại & Sự kiện Networking</h2>
+      <p>
+        <i
+          >Yêu cầu: Sử dụng method GET để đính kèm dữ liệu lên URL, mở kết quả ở
+          tab mới (target _blank).</i
+        >
+      </p>
+      <form
+        action="https://www.w3schools.com/action_page.php"
+        target="_blank"
+        method="get"
+      >
+        <label for="diemDen">Chọn hành trình trải nghiệm:</label>
+        <select id="diemDen" name="diemDen">
+          <option value="SunWorld">
+            City Tour: Khám phá Sun World Hà Nam (Đi về trong ngày)
+          </option>
+          <option value="RoadTrip" selected>
+            Road Trip Duyên Hải: Hà Nội - Đà Nẵng (Hành trình 9 ngày)
+          </option>
+          <option value="other">Địa điểm khác</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="khoiHanh">Lịch khởi hành dự kiến:</label>
+        <input id="khoiHanh" type="datetime-local" name="thoiGianDi" />
+
+        <br />
+        <br />
+
+        <label for="SoNguoi">Số lượng thành viên gia đình đi cùng:</label>
+        <input type="number" name="soNguoi" id="SoNguoi" value="1" />
+
+        <br />
+        <br />
+
+        <p><b>Đăng ký phương tiện di chuyển:</b></p>
+        <input
+          id="xeKhach"
+          type="radio"
+          name="phuongTien"
+          value="Xe khách đoàn"
+        />
+        <label for="xeKhach">Đi theo xe khách của đoàn 28Tech</label>
+        <br />
+        <input
+          id="xeC5"
+          type="radio"
+          name="phuongTien"
+          value="Xe Crossover Omoda C5"
+        />
+        <label for="xeC5"> Tự lái xe cá nhân</label>
+
+        <br />
+        <p>
+          <b>Yêu cầu hỗ trợ đặc biệt từ Ban tổ chức (Tick chọn nếu cần):</b>
+        </p>
+        <input id="ISOFIX" type="checkbox" name="hoTro" value="ISOFIX" />
+        <label for="ISOFIX"
+          >Hỗ trợ kiểm tra/lắp đặt ghế an toàn trẻ em (ISOFIX) cho bé 2
+          tuổi</label
+        >
+        <br />
+        <input id="anChay" type="checkbox" name="hoTro" value="Ăn Chay" />
+        <label for="anChay">Đăng ký thực đơn ăn chay riêng </label>
+        <br />
+        <label for=""
+          >Tải lên giấy tờ tùy thân (Căn cước / Bằng lái xe) để làm thủ tục
+          khách sạn:</label
+        ><br />
+        <input type="file" name="giayTo" /><br />
+        <br />
+        <button>Xác nhận lịch trình</button>
+      </form>
+      <hr />
+      <h2>Bài tập 3: Khảo sát Thiết bị Thực hành Backend</h2>
+      <p>
+        <i
+          >Yêu cầu: Kết hợp Form với các thẻ định dạng văn bản Inline (mark,
+          del, b).</i
+        >
+      </p>
+      <p>
+        Để tối ưu hóa không gian hiển thị mã nguồn (Code), hãy cung cấp thông
+        tin thiết bị phần cứng của bạn:
+      </p>
+      <form action="https://www.w3schools.com/action_page.php">
+        <label for="manPhu">Màn hình phụ đang sử dụng:</label>
+        <select name="manPhu" id="manPhu">
+          <option value="None">Chỉ dùng màn hình Laptop</option>
+          <option value="màn Samsung" selected>Màn hình mở rộng Samsung</option>
+          <option value="otter">Thương hiệu khác</option>
+        </select>
+        <br />
+        <br />
+        <label for="baoHanh">Hạn bảo hành phần cứng (Tháng/Năm):</label>
+        <input type="date" name="baoHanh" id="baoHanh" />
+        <br />
+        <br />
+        <p>
+          Bạn có thường xuyên kết nối <b>máy chiếu</b> hoặc
+          <b>Tivi màn hình lớn</b>
+          (Ví dụ: Samsung QLED 65-inch Tizen OS) để họp nhóm và xem biểu đồ hệ
+          thống không?
+        </p>
+        <input type="radio" name="suDungTiVi" id="suDung" value="Có" />
+        <label for="suDung">Có kết nối màn hình lớn</label>
+        <input type="radio" name="suDungTiVi" id="khongDung" value="Không" />
+        <label for="khongDung">Không có nhu cầu</label>
+
+        <br /><br />
+        <button>Hoàn tất tham khảo</button>
+      </form>
+    </main>
+  </body>
+</html>
