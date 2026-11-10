@@ -1168,6 +1168,7 @@ input[type="number"] {
 .section-14 .inner-radio input {
   width: 20px;
   height: 20px;
+  margin: 0;
 }
 .section-14 .inner-radio label {
   color: #333333;
@@ -1199,6 +1200,7 @@ input[type="number"] {
   border-radius: 6px;
   border: 1px solid #e0e0e0;
   width: 100%;
+  resize: none;
 }
 .section-14 .inner-group textarea::placeholder {
   color: #828282;
